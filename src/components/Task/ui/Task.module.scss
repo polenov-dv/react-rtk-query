@@ -1,0 +1,23 @@
+.list_item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.func {
+  display: flex;
+  gap: 0 20px;
+}
+
+.btn {
+  border-radius: 15px;
+  padding: 5px 10px;
+  border-color: bisque;
+
+  &:hover {
+    background-color: #333232;
+  }
+}
+
+.btn_change {
+  color: rgb(201, 161, 52);
+}

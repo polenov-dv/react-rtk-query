@@ -1,0 +1,39 @@
+.modalWindow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  background: inherit;
+}
+
+.content {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  min-width: 600px;
+  min-height: 250px;
+  position: relative;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close_modal {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  right: -15px;
+  top: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .content {
+    min-width: 280px;
+  }
+}

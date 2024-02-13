@@ -1,0 +1,72 @@
+@import "./reset.scss";
+@import "./font.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.app {
+  font-family: "CaviarDreamsRegular";
+  font-size: 18px;
+  line-height: 1.2;
+
+  background-color: #181818;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  cursor: pointer;
+
+  font-size: 18px;
+  color: #fe5f1e;
+  text-align: center;
+  border: 1px solid #fe5f1e;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 830px) {
+  .container {
+    max-width: 830px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    max-width: 380px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
